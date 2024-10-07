@@ -66,6 +66,23 @@ section {
     text-decoration: none;
 }
 
+.btn-secondary {
+    background-color: #FFD700; 
+    font-weight: bold;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-secondary:hover {
+    background-color: #003366;
+    color: white;
+}
+
 .btn-default:hover {
     background-color: #003366;
     /* Azul escuro no hover */
