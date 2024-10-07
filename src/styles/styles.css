@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('header.css');
+@import url('home.css');
+@import url('catalog.css');
+@import url('rent.css');
+@import url('footer.css');
+
+/* Global */
+* {
+    font-family: "Gupter", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(199, 199, 199);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1a1a1a; /* Azul escuro no scroll */
+}
+
+body {
+    background-color: white; /* Fundo branco */
+    transition: .5s;
+}
+
+/* Seções */
+section {
+    padding: 50px 8%;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD700; /* Amarelo para os botões padrão */
+    color: black; /* Texto preto */
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .1s ease;
+}
+
+.btn-default:hover {
+    background-color: #003366; /* Azul escuro no hover */
+    color: white; /* Texto branco no hover */
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #003366; /* Azul escuro nos ícones */
+    background-color: white;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .1s ease;
+}
+
+body.dark-mode .social-media-buttons a {
+    color: white;
+    background-color: rgb(73, 73, 73);
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Serviços */
+.section-title {
+    color: #FFD700; /* Amarelo para o título da seção */
+    font-size: 1.563rem;
+    font-weight: bolder;
+}
+
+.section-subtitle {
+    color: black;
+    font-weight: bolder;
+    font-size: 2.1875rem;
+}

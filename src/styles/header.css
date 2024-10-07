@@ -1,0 +1,46 @@
+/* Header */
+header {
+    width: 100%;
+    padding: 10px 8%;
+    position: sticky;
+    top: 0;
+    background-color: #003366; /* Azul escuro */
+    z-index: 3;
+}
+
+/* Navbar */
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+#nav_logo {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #FFD700; /* Amarelo para o logo */
+}
+
+/* Lista de navegação */
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+#nav_list li a {
+    color: white; /* Texto da navbar em branco */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover nos itens da nav */
+#nav_list li a:hover {
+    background-color: #FFD700; /* Amarelo no hover */
+    color: #003366; /* Texto azul escuro no hover */
+    border-radius: 5px;
+}
