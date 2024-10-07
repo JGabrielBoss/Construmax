@@ -1,0 +1,16 @@
+.rent {
+    background-color: #f0f0f0;
+    padding: 50px 8%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.rent h2 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.rent p {
+    margin-bottom: 20px;
+    color: black;
+}

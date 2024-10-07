@@ -2,9 +2,8 @@
 header {
     width: 100%;
     padding: 10px 8%;
-    position: sticky;
     top: 0;
-    background-color: #003366; /* Azul escuro */
+    background-color: #003366;
     z-index: 3;
 }
 
@@ -20,7 +19,7 @@ header {
 #nav_logo {
     font-size: 28px;
     font-weight: bolder;
-    color: #FFD700; /* Amarelo para o logo */
+    color: #FFD700;
 }
 
 /* Lista de navegação */
@@ -31,7 +30,7 @@ header {
 }
 
 #nav_list li a {
-    color: white; /* Texto da navbar em branco */
+    color: white;
     text-decoration: none;
     font-size: 18px;
     padding: 0.5rem 1rem;
@@ -40,7 +39,7 @@ header {
 
 /* Hover nos itens da nav */
 #nav_list li a:hover {
-    background-color: #FFD700; /* Amarelo no hover */
-    color: #003366; /* Texto azul escuro no hover */
+    background-color: #FFD700;
+    color: #003366;
     border-radius: 5px;
 }

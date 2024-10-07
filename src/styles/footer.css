@@ -1,11 +1,15 @@
-footer {
-    background-color: #003366; /* Rodapé em azul escuro */
-    color: white; /* Texto em branco */
+#contact {
+    background-color: #003366;
+    color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 20px 0;
 }
 
-footer a {
-    color: #FFD700; /* Links em amarelo */
+#contact a {
+    color: #FFD700;
     text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }

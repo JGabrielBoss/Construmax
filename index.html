@@ -18,8 +18,8 @@
 <body>
     <!--Navbar-->
     <header>
-        <nav>
-            <p id="nav_logo">ConstruMax LOGO</p>
+        <nav id="navbar">
+            <p id="nav_logo">ConstruMax</p>
 
             <!--Lista dos meus itens na nav bar-->
             <ul id="nav_list">
@@ -41,12 +41,16 @@
 
     <!--Conteudo principal-->
     <main id="content">
+        <!--Banner do site-->
+        <div id="banner">
+            <img src="src/images/guindaste.jpg" class="home-banner" alt="Guindaste móvel">
+        </div>
         <!--Home-->
         <section id="home">
             <!--Esse aqui é o Call to Action-->
             <div id="cta">
                 <!--Slogan-->
-                <h1>
+                <h1 id="title">
                     ConstruMax Potência para Construir o Futuro
                 </h1>
                 <p class="description">
@@ -79,26 +83,28 @@
                 </div>
             </div>
 
-            <!--Banner do site-->
-            <div id="banner">
-                <img src="#" class="home-banner" alt="Imagem de maquinário pesado">
-            </div>
         </section>
 
         <!--Aqui vai ficar um grid com alguns produtos-->
         <section id="catalog">
-            <h2>Nosso Catálogo</h2>
+            <h2 id="title">Nosso Catálogo</h2>
             <div id="products">
                 <div id="products_item" class="products-item">
-                    <img src="escavadeira.jpg" alt="Escavadeira">
-                    <h3>Escavadeira Caterpillar</h3>
+                    <img src="src/images/retroescavadeira.jpg" alt="Retroescavadeira">
+                    <h3>Retroescavadeira John Deere</h3>
                     <p>R$ 500.000</p>
                     <button class="btn-secondary">Adicionar ao Carrinho</button>
                 </div>
                 <div id="products_item" class="products-item">
-                    <img src="motoniveladora.jpg" alt="Motoniveladora">
-                    <h3>Motoniveladora Volvo</h3>
+                    <img src="src/images/manipulador.jpg" alt="Manipulador Telescópico">
+                    <h3>Manipulador Telescópico Gehl</h3>
                     <p>R$ 750.000</p>
+                    <button class="btn-secondary">Adicionar ao Carrinho</button>
+                </div>
+                <div id="products_item" class="products-item">
+                    <img src="src/images/escavadeira.jpg" alt="Escavadeira">
+                    <h3>Escavadeira Komatsu</h3>
+                    <p>R$ 900.000</p>
                     <button class="btn-secondary">Adicionar ao Carrinho</button>
                 </div>
                 <!--Adcionar mais futuramente-->
@@ -107,7 +113,7 @@
 
         <!-- Seção de Aluguel -->
         <section id="rent" class="rent">
-            <h2>Serviço de Aluguel</h2>
+            <h2 id="title">Serviço de Aluguel</h2>
             <p>Prefere alugar? Confira nossas opções de máquinas disponíveis para locação com entrega rápida e suporte
                 garantido.</p>
             <a href="#" class="btn-default">Ver Máquinas para Alugar</a>

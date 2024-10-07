@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @import url('header.css');
 @import url('home.css');
@@ -8,7 +8,7 @@
 
 /* Global */
 * {
-    font-family: "Gupter", serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -29,11 +29,13 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #1a1a1a; /* Azul escuro no scroll */
+    background-color: #1a1a1a;
+    /* Azul escuro no scroll */
 }
 
 body {
-    background-color: white; /* Fundo branco */
+    background-color: white;
+    /* Fundo branco */
     transition: .5s;
 }
 
@@ -42,24 +44,33 @@ section {
     padding: 50px 8%;
 }
 
+#title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
 .btn-default {
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFD700; /* Amarelo para os botões padrão */
-    color: black; /* Texto preto */
+    background-color: #FFD700;
+    color: black;
     border-radius: 5px;
     padding: 10px 14px;
     font-weight: 700;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color .1s ease;
+    text-decoration: none;
 }
 
 .btn-default:hover {
-    background-color: #003366; /* Azul escuro no hover */
-    color: white; /* Texto branco no hover */
+    background-color: #003366;
+    /* Azul escuro no hover */
+    color: white;
+    /* Texto branco no hover */
 }
 
 .social-media-buttons {
@@ -76,7 +87,8 @@ section {
     font-size: 1.25rem;
     border-radius: 5px;
     text-decoration: none;
-    color: #003366; /* Azul escuro nos ícones */
+    color: #003366;
+    /* Azul escuro nos ícones */
     background-color: white;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow .1s ease;
@@ -93,7 +105,8 @@ body.dark-mode .social-media-buttons a {
 
 /* Seção de Serviços */
 .section-title {
-    color: #FFD700; /* Amarelo para o título da seção */
+    color: #FFD700;
+    /* Amarelo para o título da seção */
     font-size: 1.563rem;
     font-weight: bolder;
 }
