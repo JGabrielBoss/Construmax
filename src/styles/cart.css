@@ -1,0 +1,24 @@
+/* Estilo para o carrinho de compras */
+#shopping-cart {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Estilo para os itens do carrinho */
+#cart-items div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+/* Estilo para o botão de remoção */
+.remove-button {
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

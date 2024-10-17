@@ -5,6 +5,7 @@
 @import url('catalog.css');
 @import url('rent.css');
 @import url('footer.css');
+@import url('cart.css');
 
 /* Global */
 * {
@@ -111,13 +112,12 @@ section {
     transition: box-shadow .1s ease;
 }
 
-body.dark-mode .social-media-buttons a {
-    color: white;
-    background-color: rgb(73, 73, 73);
-}
-
-.social-media-buttons a:hover {
-    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+.social-media-buttons a:hover{
+    background-color: #003366;
+    color: #FFD700;
+    /* Azul escuro nos ícones */
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .1s ease;
 }
 
 /* Seção de Serviços */
