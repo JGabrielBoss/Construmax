@@ -1,3 +1,5 @@
+//Carrinho de compra
+
 let cart = []; // Array para armazenar os itens do carrinho
 let total = 0; // Variável para armazenar o total
 
@@ -49,3 +51,36 @@ function updateCart() {
     total
   )}`;
 }
+
+// Carregar o header dinamicamente
+document.addEventListener("DOMContentLoaded", function () {
+  const headerPlaceholder = document.getElementById("header_placeholder");
+  fetch("header.html")
+    .then((response) => response.text())
+    .then((data) => {
+      headerPlaceholder.innerHTML = data;
+
+      const mobileBtn = document.getElementById("mobile_btn");
+      const mobileMenu = document.getElementById("mobile_menu");
+
+      // Verifica se os elementos existem antes de adicionar os event listeners
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener("click", function () {
+          // Alterna a classe 'active' no menu mobile
+          mobileMenu.classList.toggle("active");
+        });
+      }
+    })
+    .catch((error) => console.error("Erro ao carregar o header:", error));
+});
+
+//Carregar o footer dinamicamente
+document.addEventListener("DOMContentLoaded", function () {
+  const footerPlaceholder = document.getElementById("footer_placeholder");
+  fetch("footer.html")
+    .then((response) => response.text())
+    .then((data) => {
+      footerPlaceholder.innerHTML = data;
+    })
+    .catch((error) => console.error("Erro ao carregar o footer:", error));
+});

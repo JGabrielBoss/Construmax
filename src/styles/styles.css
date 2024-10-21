@@ -114,7 +114,7 @@ section {
 
 .social-media-buttons a:hover{
     background-color: #003366;
-    color: #FFD700;
+    color: white;
     /* Azul escuro nos ícones */
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow .1s ease;
