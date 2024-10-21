@@ -1,5 +1,4 @@
 //Carrinho de compra
-
 let cart = []; // Array para armazenar os itens do carrinho
 let total = 0; // Variável para armazenar o total
 
