@@ -19,8 +19,61 @@
     <!--Navbar-->
     <!-- Aqui será carregado o header -->
     <div id="header_placeholder"></div>
-    <main>
+    <!--Conteudo principal-->
+    <main id="content">
+        <div id="banner">
+            <img src="src/images/machines-banner.jpg" class="home-banner" alt="Máquinas">
+        </div>
 
+        <section id="catalog">
+            <h2 id="title">Nossas Máquinas</h2>
+            <div id="products">
+                <div id="products_item" class="products-item">
+                    <img src="src/images/guindaste.jpg" alt="Guindaste">
+                    <h3>Guindaste Móvel</h3>
+                    <p>R$ 1.200.000</p>
+                    <button class="btn-secondary" onclick="addToCart('Guindaste Móvel', 1200000)">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div id="products_item" class="products-item">
+                    <img src="src/images/escavadeira.jpg" alt="Escavadeira">
+                    <h3>Escavadeira Hidráulica</h3>
+                    <p>R$ 900.000</p>
+                    <button class="btn-secondary" onclick="addToCart('Escavadeira Hidráulica', 900000)">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div id="products_item" class="products-item">
+                    <img src="src/images/retroescavadeira.jpg" alt="Retroescavadeira">
+                    <h3>Retroescavadeira</h3>
+                    <p>R$ 500.000</p>
+                    <button class="btn-secondary" onclick="addToCart('Retroescavadeira', 500000)">Adicionar ao
+                        Carrinho</button>
+                </div>
+
+                <div id="products_item" class="products-item">
+                    <img src="src/images/guindaste.jpg" alt="Guindaste">
+                    <h3>Guindaste Móvel</h3>
+                    <p>R$ 1.200.000</p>
+                    <button class="btn-secondary" onclick="addToCart('Guindaste Móvel', 1200000)">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div id="products_item" class="products-item">
+                    <img src="src/images/escavadeira.jpg" alt="Escavadeira">
+                    <h3>Escavadeira Hidráulica</h3>
+                    <p>R$ 900.000</p>
+                    <button class="btn-secondary" onclick="addToCart('Escavadeira Hidráulica', 900000)">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <div id="products_item" class="products-item">
+                    <img src="src/images/retroescavadeira.jpg" alt="Retroescavadeira">
+                    <h3>Retroescavadeira</h3>
+                    <p>R$ 500.000</p>
+                    <button class="btn-secondary" onclick="addToCart('Retroescavadeira', 500000)">Adicionar ao
+                        Carrinho</button>
+                </div>
+                <!-- Adicione mais máquinas conforme necessário -->
+            </div>
+        </section>
     </main>
     <div id="footer_placeholder"></div>
     <script src="src/javascript/script.js"></script>

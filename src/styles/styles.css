@@ -69,6 +69,7 @@ section {
 
 .btn-secondary {
     background-color: #FFD700; 
+    text-decoration: none;
     font-weight: bold;
     color: black;
     border: none;
