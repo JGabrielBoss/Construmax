@@ -55,6 +55,10 @@ header {
 }
 
 @media screen and (max-width: 1170px) {
+    #btn_div{
+        display: flex;
+        gap: 30px;
+    }
 
     #nav_list,
     #navbar .btn-default {
@@ -68,6 +72,9 @@ header {
         background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
+    }
+    #mobile_btn:hover {
+        color:#FFD700;
     }
 
     #mobile_menu {

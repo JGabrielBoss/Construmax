@@ -26,7 +26,7 @@ function removeFromCart(index) {
 
 // Função para atualizar a exibição do carrinho
 function updateCart() {
-  const cartItemsDiv = document.getElementById("cart-items");
+  const cartItemsDiv = document.getElementById("cart_items");
   cartItemsDiv.innerHTML = ""; // Limpa os itens do carrinho
 
   // Adiciona cada item do carrinho à exibição
@@ -46,35 +46,63 @@ function updateCart() {
   });
 
   // Atualiza o total do carrinho usando a função formatPrice
-  document.getElementById("total-price").textContent = `Total: ${formatPrice(
+  document.getElementById("total_price").textContent = `Total: ${formatPrice(
     total
   )}`;
 }
 
-// Carregar o header dinamicamente
+//Carregar o header dinamicamente
 document.addEventListener("DOMContentLoaded", function () {
   const headerPlaceholder = document.getElementById("header_placeholder");
   fetch("header.html")
     .then((response) => response.text())
     .then((data) => {
       headerPlaceholder.innerHTML = data;
-
+      
+      // Configura o menu mobile somente após o header ser carregado
       const mobileBtn = document.getElementById("mobile_btn");
       const mobileMenu = document.getElementById("mobile_menu");
 
-      // Verifica se os elementos existem antes de adicionar os event listeners
       if (mobileBtn && mobileMenu) {
         mobileBtn.addEventListener("click", function () {
-          // Alterna a classe 'active' no menu mobile
           mobileMenu.classList.toggle("active");
         });
       }
+      // Carregar o cart após o header estar carregado
+      loadCart();
     })
     .catch((error) => console.error("Erro ao carregar o header:", error));
 });
 
-//Carregar o footer dinamicamente
-document.addEventListener("DOMContentLoaded", function () {
+// Função para carregar o carrinho de compras
+function loadCart() {
+  const cartPlaceholder = document.getElementById("cart_placeholder");
+  fetch("cart.html")
+    .then((response) => response.text())
+    .then((data) => {
+      cartPlaceholder.innerHTML = data;
+
+      // Agora que o cart.html foi carregado, selecione o botão do carrinho e a seção do carrinho
+      const cartButton = document.getElementById("cart_button");
+      const shoppingCart = document.getElementById("shopping_cart");
+
+      // Verifique se ambos existem antes de adicionar o evento de clique
+      if (cartButton && shoppingCart) {
+        cartButton.onclick = () => {
+          shoppingCart.classList.toggle("show");
+        };
+      } else {
+        console.error("Elemento cartButton ou shoppingCart não encontrado.");
+      }
+
+      // Carregar o footer após o cart estar carregado
+      loadFooter();
+    })
+    .catch((error) => console.error("Erro ao carregar o cart:", error));
+}
+
+// Função para carregar o footer dinamicamente
+function loadFooter() {
   const footerPlaceholder = document.getElementById("footer_placeholder");
   fetch("footer.html")
     .then((response) => response.text())
@@ -82,4 +110,4 @@ document.addEventListener("DOMContentLoaded", function () {
       footerPlaceholder.innerHTML = data;
     })
     .catch((error) => console.error("Erro ao carregar o footer:", error));
-});
+}
