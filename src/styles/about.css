@@ -1,0 +1,54 @@
+/* Estilos do banner Sobre Nós */
+#about_banner {
+    position: relative; /* Adicione esta linha */
+    background-image: url('../images/banner-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 130px 20px;
+    color: white;
+    text-align: center;
+}
+
+#about_banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade aqui */
+    z-index: 1; /* Coloque o overlay atrás do conteúdo */
+}
+
+#about_banner h1 {
+    position: relative; /* Adicione esta linha */
+    z-index: 2; /* Coloque o texto acima do overlay */
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilos da seção Sobre Nós */
+#about_us {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about_us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #003366;
+}
+
+#about_us p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#about_us strong {
+    color: #003366;
+    font-weight: bold;
+}
