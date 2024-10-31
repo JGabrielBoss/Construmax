@@ -1,20 +1,20 @@
-#banner_machine {
+#banner_services {
   display: flex;
   position: relative;
   text-align: center;
 }
 
-#banner_machine::before {
+#banner_services::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade aqui */
+  background-color: rgba(0, 0, 0, 0.3); /* Ajuste a opacidade aqui */
 }
 
-.machines-banner {
+.services-banner {
   background-size: 100%;
   width: 100%;
   height: auto;

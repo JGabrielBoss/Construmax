@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.text())
     .then((data) => {
       headerPlaceholder.innerHTML = data;
-      
+
       // Configura o menu mobile somente após o header ser carregado
       const mobileBtn = document.getElementById("mobile_btn");
       const mobileMenu = document.getElementById("mobile_menu");

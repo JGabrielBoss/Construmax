@@ -1,15 +1,15 @@
 #contact {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
 #contact a {
-    color: #FFD700;
-    text-decoration: none;
+  color: #ffd700;
+  text-decoration: none;
 }
 
 #contact a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

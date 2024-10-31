@@ -53,13 +53,15 @@
   }
 }
 
-@media screen and (max-width: 900px) { /* Ajuste para telas menores */
+@media screen and (max-width: 900px) {
+  /* Ajuste para telas menores */
   #products {
     grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas pequenas */
   }
 }
 
-@media screen and (max-width: 600px) { /* Ajuste para telas ainda menores */
+@media screen and (max-width: 600px) {
+  /* Ajuste para telas ainda menores */
   #products {
     grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
   }

@@ -1,93 +1,93 @@
 #home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    padding-top: 20px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  position: relative;
 }
 
 #cta {
-    text-align: center;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #cta h1 {
-    font-size: 2.5rem;
-    color: #003366;
+  font-size: 2.5rem;
+  color: #003366;
 }
 
 #cta .description {
-    font-size: 1.125rem;
-    color: black;
+  font-size: 1.125rem;
+  color: black;
 }
 
 #cta_buttons {
-    margin: 20px;
-    display: inline-flex;
-    justify-content: center;
-    border-radius: 5px;
+  margin: 20px;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 5px;
 }
 
-#cta_buttons button{
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFD700;
-    color: black;
-    border-radius: 5px;
-    padding: 10px 14px;
-    font-weight: 700;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color .1s ease;
-    text-decoration: none;
+#cta_buttons button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd700;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 14px;
+  font-weight: 700;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  text-decoration: none;
 }
 
 /* Hover na div e no botão ao mesmo tempo */
 #cta_buttons:hover button {
-    background-color: #003366;
-    color: white;
+  background-color: #003366;
+  color: white;
 }
 
 #cta_buttons:hover {
-    color: white;
-    background-color: #003366;
+  color: white;
+  background-color: #003366;
 }
 
 #phone_button {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    color: var(--color-text);
-    padding: 5px 10px;
-    font-weight: 700;
-    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    font-size: 0.875rem;
-    white-space: nowrap;
-    text-decoration: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--color-text);
+  padding: 5px 10px;
+  font-weight: 700;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 #banner {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .home-banner {
-    width: 100%;
-    height: auto;
-    max-height: 300px; 
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 #products_more {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
