@@ -42,6 +42,10 @@ html {
   /* Azul escuro no scroll */
 }
 
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor do polegar quando o mouse passa por cima */
+}
+
 body {
   background-color: white;
   /* Fundo branco */
@@ -69,7 +73,7 @@ section {
   border-radius: 5px;
   padding: 10px 14px;
   font-weight: 700;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.1s ease;
   text-decoration: none;
@@ -86,6 +90,7 @@ section {
   cursor: pointer;
   margin: 20px;
   margin-bottom: 30px;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary:hover {
@@ -117,7 +122,7 @@ section {
   color: #003366;
   /* Azul escuro nos ícones */
   background-color: white;
-  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.1s ease;
 }
 
@@ -125,7 +130,7 @@ section {
   background-color: #003366;
   color: white;
   /* Azul escuro nos ícones */
-  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.1s ease;
 }
 

@@ -81,21 +81,37 @@ function loadCart() {
     .then((response) => response.text())
     .then((data) => {
       cartPlaceholder.innerHTML = data;
+      console.log("Carrinho carregado");
 
-      // Agora que o cart.html foi carregado, selecione o botão do carrinho e a seção do carrinho
       const cartButton = document.getElementById("cart_button");
       const shoppingCart = document.getElementById("shopping_cart");
 
-      // Verifique se ambos existem antes de adicionar o evento de clique
       if (cartButton && shoppingCart) {
-        cartButton.onclick = () => {
+        cartButton.onclick = (event) => {
+          event.stopPropagation(); // Impede o clique de se propagar
           shoppingCart.classList.toggle("show");
+          console.log("Botão do carrinho clicado");
         };
+
+        // Impede o fechamento ao clicar dentro do carrinho
+        shoppingCart.addEventListener("click", (event) => {
+          event.stopPropagation();
+        });
+
+        // Fecha o carrinho ao clicar fora
+        document.addEventListener("click", function (event) {
+          if (
+            shoppingCart.classList.contains("show") &&
+            !shoppingCart.contains(event.target)
+          ) {
+            shoppingCart.classList.remove("show");
+            console.log("Carrinho fechado ao clicar fora");
+          }
+        });
       } else {
         console.error("Elemento cartButton ou shoppingCart não encontrado.");
       }
 
-      // Carregar o footer após o cart estar carregado
       loadFooter();
     })
     .catch((error) => console.error("Erro ao carregar o cart:", error));

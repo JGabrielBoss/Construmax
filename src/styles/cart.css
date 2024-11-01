@@ -2,7 +2,6 @@
 #shopping_cart {
   border: 1px solid #ccc;
   padding: 20px;
-  margin: 20px 0;
 }
 
 /* Estilo para os itens do carrinho */
@@ -11,6 +10,34 @@
   justify-content: space-between;
   align-items: center;
   margin: 5px 0;
+}
+
+#cart_items {
+  max-height: 500px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+}
+
+/* Estilo para a barra de rolagem do carrinho */
+#cart_items::-webkit-scrollbar {
+  width: 5px;
+}
+
+#cart_items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#cart_items::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+#cart_items::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* Estilo para o botão de remoção */
@@ -26,7 +53,7 @@
 /* Estilos para o modal do carrinho */
 #shopping_cart {
   position: fixed;
-  top: 34px;
+  top: 0;
   right: -100%; /* Inicialmente oculto fora da tela */
   width: 300px;
   height: 100%;
