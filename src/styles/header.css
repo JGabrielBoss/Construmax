@@ -5,6 +5,8 @@ header {
   top: 0;
   background-color: #003366;
   z-index: 3;
+  position: fixed;
+  transition: top 0.3s;
 }
 
 /* Navbar */

@@ -59,6 +59,22 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       headerPlaceholder.innerHTML = data;
 
+      // Navbar dinamica
+      const header = document.querySelector("header");
+      let lastScrollTop = 0;
+
+      window.addEventListener("scroll", function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          header.style.top = "-70px";
+        } else {
+          header.style.top = "0";
+        }
+
+        lastScrollTop = scrollTop;
+      });
+
       // Configura o menu mobile somente após o header ser carregado
       const mobileBtn = document.getElementById("mobile_btn");
       const mobileMenu = document.getElementById("mobile_menu");
