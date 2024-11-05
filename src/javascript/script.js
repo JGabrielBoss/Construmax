@@ -82,6 +82,13 @@ document.addEventListener("DOMContentLoaded", function () {
       if (mobileBtn && mobileMenu) {
         mobileBtn.addEventListener("click", function () {
           mobileMenu.classList.toggle("active");
+
+          // Congela a tela se o menu estiver visível
+          if (mobileMenu.classList.contains("active")) {
+            document.body.classList.add("freeze"); // Adiciona a classe ao body
+          } else {
+            document.body.classList.remove("freeze"); // Remove a classe do body
+          }
         });
       }
       // Carregar o cart após o header estar carregado

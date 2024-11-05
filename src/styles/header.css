@@ -57,6 +57,10 @@ header {
 }
 
 @media screen and (max-width: 1170px) {
+  body.freeze {
+    overflow: hidden;
+  }
+
   #btn_div {
     display: flex;
     gap: 30px;
