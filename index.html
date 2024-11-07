@@ -12,9 +12,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="impressao.css" media="print">
     <link rel="icon" href="src/images/icon.png" type="image/x-icon">
     <title>ConstruMax</title>
 
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="ConstruMax - Máquinas de Construção Civil" />
+    <meta property="og:description" content="Encontre as melhores máquinas de construção civil para o seu projeto. Navegue pela nossa loja e faça a sua compra online." />
+    <meta property="og:image" content="https://www.ptsworks.com/wp-content/uploads/2020/02/heavy-construction-equipment-types.jpg" />
+    <meta property="og:url" content="https://www.construmax.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ConstruMax" />
 </head>
 
 <body>
@@ -25,8 +33,7 @@
     <!--Conteudo principal-->
     <main id="content">
         <!--Banner do site-->
-        <div id="banner">
-            <img src="src/images/guindaste.jpg" class="home-banner" alt="Guindaste móvel">
+        <div id="banner" aria-label="Guindaste no deserto">
         </div>
         <!--Home-->
         <section id="home">
@@ -73,21 +80,21 @@
             <h2 id="title">Nosso Catálogo</h2>
             <div id="products">
                 <div id="products_item" class="products-item">
-                    <img src="src/images/retroescavadeira.jpg" alt="Retroescavadeira">
+                    <img src="src/images/retroescavadeira.jpg" alt="Retroescavadeira" width="300" height="auto">
                     <h3>Retroescavadeira John Deere</h3>
                     <p>R$ 500.000</p>
                     <button class="btn-secondary" onclick="addToCart('Retroescavadeira John Deere', 500000)">Adicionar
                         ao Carrinho</button>
                 </div>
                 <div id="products_item" class="products-item">
-                    <img src="src/images/manipulador.jpg" alt="Manipulador Telescópico">
+                    <img src="src/images/manipulador.jpg" alt="Manipulador Telescópico" width="300" height="auto">
                     <h3>Manipulador Telescópico Gehl</h3>
                     <p>R$ 750.000</p>
                     <button class="btn-secondary" onclick="addToCart('Manipulador Telescópico Gehl', 750000)">Adicionar
                         ao Carrinho</button>
                 </div>
                 <div id="products_item" class="products-item">
-                    <img src="src/images/escavadeira.jpg" alt="Escavadeira">
+                    <img src="src/images/escavadeira.jpg" alt="Escavadeira" width="300" height="auto">
                     <h3>Escavadeira Komatsu</h3>
                     <p>R$ 900.000</p>
                     <button class="btn-secondary" onclick="addToCart('Escavadeira Komatsu', 900000)">Adicionar ao

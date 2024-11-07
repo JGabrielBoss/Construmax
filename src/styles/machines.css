@@ -1,6 +1,10 @@
 #banner_machine {
-  display: flex;
   position: relative;
+  background-image: url(../images/machines-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 190px 20px;
+  color: white;
   text-align: center;
 }
 
@@ -12,23 +16,4 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade aqui */
-}
-
-.machines-banner {
-  background-size: 100%;
-  width: 100%;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
-}
-
-.title-banner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  font-size: 3em;
-  font-weight: bold;
-  color: white;
 }

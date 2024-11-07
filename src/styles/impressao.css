@@ -1,0 +1,25 @@
+/* Remover elementos desnecessários */
+header, footer, nav, .sidebar {
+    display: none;
+}
+
+/* Ajustar as margens para uma impressão melhor */
+body {
+    margin: 20mm;
+    font-family: "Times New Roman", serif;
+}
+
+/* Ajustar tamanho das imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Alterar tamanhos de texto, se necessário */
+h1, h2, h3 {
+    font-size: 18pt;
+}
+
+p {
+    font-size: 12pt;
+}

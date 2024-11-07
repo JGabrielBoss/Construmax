@@ -3,8 +3,12 @@
 }
 
 #banner_services {
-  display: flex;
   position: relative;
+  background-image: url(../images/homens_escavadeira.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 190px 20px;
+  color: white;
   text-align: center;
 }
 

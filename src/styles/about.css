@@ -4,7 +4,7 @@
   background-image: url("../images/banner-image.jpg");
   background-size: cover;
   background-position: center;
-  padding: 130px 20px;
+  padding: 190px;
   color: white;
   text-align: center;
 }
@@ -18,14 +18,6 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade aqui */
   z-index: 1; /* Coloque o overlay atrás do conteúdo */
-}
-
-#about_banner h1 {
-  position: relative; /* Adicione esta linha */
-  z-index: 2; /* Coloque o texto acima do overlay */
-  font-size: 3em;
-  font-weight: bold;
-  color: white;
 }
 
 /* Estilos da seção Sobre Nós */

@@ -74,8 +74,11 @@
 }
 
 #banner {
-  width: 100%;
-  height: auto;
+  position: relative;
+  background-image: url("../images/guindaste.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 190px;
 }
 
 .home-banner {
