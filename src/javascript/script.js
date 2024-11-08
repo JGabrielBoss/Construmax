@@ -104,17 +104,29 @@ function loadCart() {
     .then((response) => response.text())
     .then((data) => {
       cartPlaceholder.innerHTML = data;
-      console.log("Carrinho carregado");
 
       const cartButton = document.getElementById("cart_button");
       const shoppingCart = document.getElementById("shopping_cart");
       const closeCart = document.getElementById("close_cart");
+      const buyButton = document.getElementById("checkout_button");
 
       if (cartButton && shoppingCart) {
         cartButton.onclick = (event) => {
           event.stopPropagation(); // Impede o clique de se propagar
           shoppingCart.classList.toggle("show");
         };
+
+        if(buyButton){
+          buyButton.addEventListener("click", () => {
+            if(cart.length === 0){
+              alert("Carrinho vazio! Adicione itens ao carrinho antes de comprar.");
+            } else {
+              alert("Compra realizada com sucesso! Obrigado pela sua compra.");
+            }
+          });
+        } else {
+          console.error("Botão de compra não encontrado.");
+        }
 
         // Impede o fechamento ao clicar dentro do carrinho
         shoppingCart.addEventListener("click", (event) => {
@@ -158,3 +170,65 @@ function loadFooter() {
     })
     .catch((error) => console.error("Erro ao carregar o footer:", error));
 }
+
+// Função para abrir a modal
+function openModal(serviceName) {
+  const modal = document.getElementById("serviceModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const serviceForm = document.getElementById("serviceForm");
+
+  // Define o título da modal com base no serviço
+  modalTitle.textContent = `Formulário - ${serviceName}`;
+
+  //congela a modal
+  document.body.classList.add("freeze");
+
+  // Abre a modal
+  modal.style.display = "block";
+
+  // Fecha a modal ao clicar no "X"
+  document.getElementById("closeModal").onclick = function () {
+      modal.style.display = "none";
+      document.body.classList.remove("freeze");
+  };
+
+  // Fecha a modal ao clicar fora dela
+  window.onclick = function (event) {
+      if (event.target === modal) {
+          modal.style.display = "none";
+          document.body.classList.remove("freeze");
+      }
+  };
+
+  // Limpa o formulário ao fechar a modal
+  serviceForm.reset();
+}
+
+// Adiciona o evento de clique aos botões de contato
+document.addEventListener("DOMContentLoaded", () => {
+
+  const serviceForm = document.getElementById("serviceForm");
+
+  serviceForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert("Formulário enviado com sucesso!");
+    
+    // Fecha a modal e limpa o formulário
+    document.getElementById("serviceModal").style.display = "none";
+    document.body.classList.remove("freeze");
+    serviceForm.reset();
+  });
+
+  const serviceButtons = document.querySelectorAll("#service");
+
+  serviceButtons.forEach((button) => {
+      button.addEventListener("click", (event) => {
+          event.preventDefault();
+
+          // Define o nome do serviço com base no texto do botão
+          const serviceName = button.textContent.replace("CONTATO ", "");
+          openModal(serviceName);
+      });
+  });
+});
+

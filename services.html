@@ -12,14 +12,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="src/styles/styles.css">
-    <link rel="stylesheet" href="impressao.css" media="print">
+    <link rel="stylesheet" href="src/styles/impressao.css" media="print">
     <link rel="icon" href="src/images/icon.png" type="image/x-icon">
     <title>Serviços</title>
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="ConstruMax - Máquinas de Construção Civil" />
-    <meta property="og:description" content="Encontre as melhores máquinas de construção civil para o seu projeto. Navegue pela nossa loja e faça a sua compra online." />
-    <meta property="og:image" content="https://www.ptsworks.com/wp-content/uploads/2020/02/heavy-construction-equipment-types.jpg" />
+    <meta property="og:description"
+        content="Encontre as melhores máquinas de construção civil para o seu projeto. Navegue pela nossa loja e faça a sua compra online." />
+    <meta property="og:image"
+        content="https://www.ptsworks.com/wp-content/uploads/2020/02/heavy-construction-equipment-types.jpg" />
     <meta property="og:url" content="https://www.construmax.com" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="ConstruMax" />
@@ -50,7 +52,7 @@
                     de ponta e eficiência.
                 </p>
                 <div class="btn-service">
-                    <a href="#" class="btn-default">CONTADO MANUTEÇÃO</a>
+                    <a href="#" id="service" class="btn-default">CONTATO MANUTEÇÃO</a>
                 </div>
             </div>
         </section>
@@ -72,7 +74,7 @@
                     compactação eficiente de solo e asfalto.
                 </p>
                 <div class="btn-service">
-                    <a href="#" class="btn-default">CONTADO LOCAÇÃO</a>
+                    <a href="#" id="service" class="btn-default">CONTATO LOCAÇÃO</a>
                 </div>
             </div>
         </section>
@@ -94,7 +96,7 @@
                     desejado.
                 </p>
                 <div class="btn-service">
-                    <a href="#" class="btn-default">CONTATO TERRAPLANAGEM</a>
+                    <a href="#" id="service" class="btn-default">CONTATO TERRAPLANAGEM</a>
                 </div>
             </div>
         </section>
@@ -114,7 +116,7 @@
                     logístico assegura que as entregas sejam feitas em locais específicos com pontualidade e segurança.
                 </p>
                 <div class="btn-service">
-                    <a href="#" class="btn-default">CONTATO TRANSPORTE</a>
+                    <a href="#" id="service" class="btn-default">CONTATO TRANSPORTE</a>
                 </div>
             </div>
         </section>
@@ -135,7 +137,7 @@
                     novos projetos de construção.
                 </p>
                 <div class="btn-service">
-                    <a href="#" class="btn-default">CONTATO PROJETOS</a>
+                    <a href="#" id="service" class="btn-default">CONTATO PROJETOS</a>
                 </div>
             </div>
         </section>
@@ -157,13 +159,37 @@
                     necessidades do projeto.
                 </p>
                 <div class="btn-service">
-                    <a href="#" class="btn-default">CONTATO CONSULTORIA</a>
+                    <a href="#" id="service" class="btn-default">CONTATO CONSULTORIA</a>
                 </div>
             </div>
         </section>
         <!--Carrinho de compras-->
         <div id="cart_placeholder"></div>
     </main>
+
+    <!-- Modal de Formulário -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <form id="serviceForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-default">Enviar</button>
+            </form>
+        </div>
+    </div>
+
     <div id="footer_placeholder"></div>
     <script src="src/javascript/script.js"></script>
 </body>
