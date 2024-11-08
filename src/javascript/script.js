@@ -108,12 +108,12 @@ function loadCart() {
 
       const cartButton = document.getElementById("cart_button");
       const shoppingCart = document.getElementById("shopping_cart");
+      const closeCart = document.getElementById("close_cart");
 
       if (cartButton && shoppingCart) {
         cartButton.onclick = (event) => {
           event.stopPropagation(); // Impede o clique de se propagar
           shoppingCart.classList.toggle("show");
-          console.log("Botão do carrinho clicado");
         };
 
         // Impede o fechamento ao clicar dentro do carrinho
@@ -128,9 +128,17 @@ function loadCart() {
             !shoppingCart.contains(event.target)
           ) {
             shoppingCart.classList.remove("show");
-            console.log("Carrinho fechado ao clicar fora");
           }
         });
+        // Adicione o evento de clique no X após carregar o cart
+        if (closeCart) {
+          closeCart.addEventListener("click", () => {
+            shoppingCart.classList.remove("show");
+            console.log("Carrinho fechado pelo X");
+          });
+        } else {
+          console.error("Elemento closeCart não encontrado.");
+        }
       } else {
         console.error("Elemento cartButton ou shoppingCart não encontrado.");
       }

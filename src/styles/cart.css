@@ -2,6 +2,15 @@
 #shopping_cart {
   border: 1px solid #ccc;
   padding: 20px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+#shopping_cart h2{
+  margin: 10px;
+  padding: 5px;
+  color: #003366;
 }
 
 /* Estilo para os itens do carrinho */
@@ -13,8 +22,9 @@
 }
 
 #cart_items {
-  max-height: 500px;
+  max-height: 450px;
   overflow-y: auto;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -78,4 +88,13 @@
 }
 .cart-button:hover {
   color: #ffd700;
+}
+
+#close_cart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
 }
